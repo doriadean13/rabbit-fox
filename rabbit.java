@@ -32,9 +32,9 @@ public class rabbit extends Actor
 {
     
     private int smallJump=25;  // You can play with these two values but their sum must
-    private int bigJump=50;    // be less than or equal to 75.
+    private int bigJump=50;    // be less than or equal to 75
     
-    private int turnAmount= 5; // you can set this between 5 and 20. Fixed for duration of game
+    private int turnAmount=-10; // you can set this between 5 and 20. Fixed for duration of game
                                // turnAmount must be a multiple of 5.
                    
     private int maxJumps  = 4;  // Can be 1 to 5
@@ -51,6 +51,13 @@ public class rabbit extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("j"))
+        move(smallJump);
+        
+        if(Greenfoot.isKeyDown("k"))
+        move(bigJump);
+        
+        if(Greenfoot.isKeyDown("o"))
+        move(turnAmount);
     }    
 }
