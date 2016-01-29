@@ -57,6 +57,10 @@ public class fox extends Actor
     
     public void act() 
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("r"))
+        {
+            runCycle=0;
+            
+        }
     }    
 }
