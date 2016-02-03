@@ -32,5 +32,6 @@ public class Field extends World
         addObject(fox, 68, 460);
         rabbit rabbit = new rabbit();
         addObject(rabbit, 756, 84);
+        //addObject(rabbit, 33, 26);
     }
 }

@@ -36,22 +36,22 @@ public class fox extends Actor
          {
           isAtEdge=true;
           }
-        randomNo = ((int)(Math.random()*500)+800);
+        randomNo = ((int)(Math.random()*461));
         if(isAtEdge==true)
         {
             setLocation (68, randomNo);
             shouldMove(true);
             isAtEdge=false;
         }
-        /**
-        if(Greenfoot.isKeyDown("r"))
+        
+        if(Greenfoot.isKeyDown(" "))
         {
             running = true;
             inRestMode=false;
-            while(
+            //while(
             
-            move(
+            move(8);
         }
-        */
+        
     }    
 }

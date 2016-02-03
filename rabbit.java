@@ -51,13 +51,13 @@ public class rabbit extends Actor
      */
     public void act() 
     {
-        if(Greenfoot.isKeyDown("j"))
+        if(Greenfoot.isKeyDown("d"))
         move(smallJump);
         
-        if(Greenfoot.isKeyDown("k"))
+        if(Greenfoot.isKeyDown("f"))
         move(bigJump);
         
-        if(Greenfoot.isKeyDown("o"))
+        if(Greenfoot.isKeyDown("a"))
         move(turnAmount);
     }    
 }
